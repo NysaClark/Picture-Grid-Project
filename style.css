@@ -1,138 +1,120 @@
-body{
-    border: 15px solid gray;
-    margin: 1px;
-}
+@media(min-width: 401px){
+    body{
+        border: 15px solid gray;
+        margin: 1px;
+        width: 80%;
+        margin-right: auto;
+        margin-left:auto;
+    }
 
-nav{
-    background-color: lightgray;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-}
+    nav{
+        background-color: lightgray;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 30px;
+    }
+    li{
+        display: inline-block;
+    }
 
-a{
-    text-decoration: none;
-    padding-right: 15px;
-    color: gray;
-}
+    a{
+        margin-left: 30px;
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-main{
-    padding: 5px 5px 5px 5px;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: auto;
-    align-items: stretch;
-    justify-items: stretch;
-}
+    main{
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        gap: 5px;
+        justify-items: stretch;
+        width: calc(100% - 40px);
+        padding: 5px 5px 5px 5px;
+    }
 
-.logo{
-    grid-column: 1/5;
-    grid-row: 1/4;
-    padding: 5px 5px 5px 5px;
-}
-.facebook{
-    grid-column: 5/6;
-    grid-row: 1/2;
-    padding: 5px 5px 5px 5px;
-}
-.twitter{
-    grid-column: 5/6;
-    grid-row: 2/3;
-    padding: 5px 5px 5px 5px;
-}
-.anon{
-    grid-column: 5/6;
-    grid-row: 3/4;
-    padding: 5px 5px 5px 5px;
-}
-.forBP{
-    grid-column: 1/3;
-    grid-row: 4/5;
-    padding: 5px 5px 5px 5px;
-}
-.joker{
-    grid-column: 3/4;
-    grid-row: 4/5;
-    padding: 5px 5px 5px 5px;
-}
-.allAges{
-    grid-column: 4/5;
-    grid-row: 4/5;
-    padding: 5px 5px 5px 5px;
-}
-.wigs{
-    grid-column: 5/6;
-    grid-row: 4/5;
-    padding: 5px 5px 5px 5px;
-}
-.playMusical{
-    grid-column: 1/2;
-    grid-row: 5/7;
-    padding: 5px 5px 5px 5px;
-}
-.superSale{
-    grid-column: 2/4;
-    grid-row: 5/6;
-    padding: 5px 5px 5px 5px;
-}
-.candy{
-    grid-column: 4/5;
-    grid-row: 5/6;
-    padding: 5px 5px 5px 5px;
-}
-.hats{
-    grid-column: 5/6;
-    grid-row: 5/6;
-    padding: 5px 5px 5px 5px;
-}
-.props{
-    grid-column: 1/2;
-    grid-row: 7/8;
-    padding: 5px 5px 5px 5px;
-}
-.xmas{
-    grid-column: 2/3;
-    grid-row: 6/8;
-    padding: 5px 5px 5px 5px;
-}
-.classical{
-    grid-column: 3/5;
-    grid-row: 6/7;
-    padding: 5px 5px 5px 5px;
-}
-.freeShopping{
-    grid-column: 5/6;
-    grid-row: 6/7;
-    padding: 5px 5px 5px 5px;
-}
-.halloween1{
-    grid-column: 3/4;
-    grid-row: 7/8;
-    padding: 5px 5px 5px 5px;
-}
-.halloween2{
-    grid-column: 4/5;
-    grid-row: 7/8;
-    padding: 5px 5px 5px 5px;
-}
-.WGG{
-    grid-column: 5/6;
-    grid-row: 7/8;
-    padding: 5px 5px 5px 5px;
-}
-.mask{
-    grid-column: 1/2;
-    grid-row: 8/9;
-    padding: 5px 5px 5px 5px;
-}
-.mardiGras{
-    grid-column: 2/4;
-    grid-row: 8/9;
-    padding: 5px 5px 5px 5px;
-}
-.text{
-    grid-column: 5/6;
-    grid-row: 8/9;
-    justify-items: end;
-    padding: 5px 5px 5px 5px;
+    .logo{
+        grid-column: 1/5;
+        grid-row: 1/4;
+    }
+    .facebook{
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
+    .twitter{
+        grid-column: 5/6;
+        grid-row: 2/3;
+    }
+    .anon{
+        grid-column: 5/6;
+        grid-row: 3/4;
+    }
+    .forBP{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .joker{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    .allAges{
+        grid-column: 4/5;
+        grid-row: 4/5;
+    }
+    .wigs{
+        grid-column: 5/6;
+        grid-row: 4/5;
+    }
+    .playMusical{
+        grid-column: 1/2;
+        grid-row: 5/7;
+    }
+    .superSale{
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+    .candy{
+        grid-column: 4/5;
+        grid-row: 5/6;
+    }
+    .hats{
+        grid-column: 5/6;
+        grid-row: 5/6;
+    }
+    .props{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .xmas{
+        grid-column: 2/3;
+        grid-row: 6/8;
+    }
+    .classical{
+        grid-column: 3/5;
+        grid-row: 6/7;
+    }
+    .freeShopping{
+        grid-column: 5/6;
+        grid-row: 6/7;
+    }
+    .halloween1{
+        grid-column: 3/4;
+        grid-row: 7/8;
+    }
+    .halloween2{
+        grid-column: 4/5;
+        grid-row: 7/8;
+    }
+    .WGG{
+        grid-column: 5/6;
+        grid-row: 7/8;
+    }
+    .mask{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    .mardiGras{
+        grid-column: 2/4;
+        grid-row: 8/9;
+    }
 }
